@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Cadastro de estoque RotaExata</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/formularioCadastro.css">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/notify.min.js"></script>
+    <script src="assets/js/autenticacao.json" ></script>
+    <script src="assets/js/autentica.js" ></script>
+
+  </head>
+<body class="bg">
+  <div class="overlay js-fullheight"></div>
+  <center>
+    <div class="boxCadastro">
+      <div class="rightbox" id="JSign">
+        <p class ="title">ESTOQUE<p>
+          <form action="" autocomplete="off" method="post">
+            <input id="JOperator" type="text" class="inputs" name="operator" value="" placeholder="Operador*">
+            <label for="operator" class="label-name">Insira o seu nome do operador cadastrado.</label>
+            <input id="JPassword" type="password" class="inputs" name="passw" placeholder="Senha*">
+            <label for="passw" class="label-name">Digite a sua senha de operador cadastrada na rede.</label>
+            <input id="btnAutentic" type="button" class="btnSubmit" value="Autenticar">
+            <input id="JName" hidden type="text" class="inputs" value="" required name="name" placeholder="Nome do produto*">
+            <select id="JVolume" required hidden class="inputs" name="volume">
+              <option class="select" value=''>Escolha o volume do produto*</option>
+              <option class="select" value='1'>50ml</option>
+              <option class="select" value='2'>100ml</option>
+              <option class="select" value='3'>150ml</option>
+              <option class="select" value='4'>200ml</option>
+            </select>
+            <textarea id="JTextArea" hidden class="textArea" name="description" style="resize: none" placeholder="Descreva seu produto"></textarea><br>
+            <input id="JRadio1" type="radio" hidden class="inputRadio" name="radio1" required value="1"><label id="JRadio11" hidden class="inputRadioF" for="radio1">Sólido</label>
+            <input id="JRadio2" type="radio" hidden class="inputRadio" name="radio1" required value="2"><label id="JRadio22" hidden class="inputRadioF" for="radio1">Líquido</label><br>
+            <input id="JTerms1" hidden type="checkbox" class="inputCheck" required name="check"><label id="JTerms11" class="inputCheckF" hidden for="check">Eu li e concordo com os termos de uso.</label><br>
+            <input id="JReset" type="reset" hidden class="btnReset" value="Cancelar">
+            <input id="JSubmit" hidden type="submit" class="btnSubmit" value="Confirmar">
+          </form>
+        </div>
+      </div>
+  </center>
+  </body>
+</html>

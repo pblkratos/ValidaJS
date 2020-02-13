@@ -1,0 +1,14 @@
+let operadores = [
+				{
+				"nome": "pablo",
+				"senha": "abacabb",
+				},
+				{
+				"nome": "henrique",
+				"senha": "abacate",
+				},
+				{
+				"nome": "oliveira",
+				"senha": "1234",
+				},
+				];
